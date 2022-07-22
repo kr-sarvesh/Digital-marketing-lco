@@ -1,5 +1,87 @@
 * {
   margin: 0;
   padding: 0;
-  border-radius: bo;
+  box-sizing: border-box;
+}
+body {
+  margin: 0 80px;
+  font-family: sans-serif;
+  height: 100vh;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px auto;
+}
+
+.navbar-container img {
+  width: 110px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.grow-list {
+  width: 600px;
+}
+.list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  list-style-type: none;
+  color: grey;
+}
+.list-item {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.list-item:hover {
+  color: black;
+}
+.nav-button {
+  background-color: gray;
+  padding: 15px 50px;
+  border-radius: 10px;
+  color: white;
+  border: transparent;
+  cursor: pointer;
+  font-size: 15px;
+}
+.nav-button:hover {
+  background-color: darkslategray;
+}
+
+.banner-container {
+  display: flex;
+  width: 700px;
+}
+
+.banner-container img {
+  width: 950px;
+  height: 550px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 10px;
+}
+
+.content h1 {
+  width: 500px;
+  height: 250px;
+  font-size: 70px;
+}
+h1 span {
+  color: darkgray;
+}
+.content .description {
+  width: 420px;
+  padding: 20px 0px;
+  text-align: justify;
+  color: grey;
+}
+
+.banner-container .btn {
+  margin-top: 30px;
 }
